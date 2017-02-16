@@ -1,0 +1,487 @@
+
+#search{
+    text-align: center;
+    padding: 0 7px;
+}
+#search input[type=text]{
+    height: 36px;
+    width: 100%;
+    border-radius: 4.8px;
+    padding: 0 12px;
+    margin: 7px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(232, 232, 232);
+}
+
+.banner{
+    position: relative;
+}
+.banner>ul{
+    overflow: hidden;
+}
+.banner>ul>li{
+    float: left;
+    width: 100%;
+}
+.banner>ul>li>a{
+    display: block;
+}
+.banner>ul>li>a>img{
+    width: 100%;
+}
+.banner>ol{
+    position: absolute;
+    height: .6rem;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    line-height: .6rem;
+}
+.banner>ol>li{
+    display: inline-block;
+    width: .6rem;
+    height: .6rem;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navBox{
+    height: 12.5rem;
+    background: #fff;
+    border-bottom: .1rem solid #EAEAEA;
+    padding: 1.5rem 0;
+    box-sizing:border-box;
+}
+.navBox nav{
+    display: flex; 
+    height: 100%;
+}
+.navBox nav a{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.navBox nav a img{
+    display: block;
+    margin: 0 auto;
+}
+.navBox nav a span{
+    display: block;
+    margin: 0 auto;
+    margin-top: .7rem;
+    font-size: 1.4rem;
+}
+.tuijianlis{
+    background: #FFF;
+    padding: 1.2rem 1.5rem;
+}
+.tuijianlis img{
+    float: left;
+    margin-right: .5rem;
+    height: 16px;
+    /*width: 6.3rem;*/
+}
+.tuijianlis .tuijianlisBox{
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.tuijianlis .tuijianlisBox ul{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.tuijianlis .tuijianlisBox ul li{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tuijianlis .tuijianlisBox ul li a span{
+    color: #F66;
+    float: left;
+    padding: 0 .5rem;
+}
+.zhangsq{
+    background: #FFF;
+    margin-top: 1.0rem;
+}
+.zhangsq header{
+    border-bottom: .1rem solid #EAEAEA;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.zhangsq header span{
+    float: left;
+    color: #F55;
+    font-size: 1.5rem;
+}
+.zhangsq header div{
+    float: left;
+    font-size: 1.2rem;
+    margin-left: .8rem;
+    color: #222;
+}
+.zhangsq header div i{
+    border: .1rem solid #AAA;
+    font-size: 1.2rem;
+    padding: 0 .3rem;
+}
+.zhangsq header a{
+    color: #222;
+    font-size: 1.4rem;
+    float: right;
+    margin-right: 0;
+}
+@media screen and (min-width: 375px){
+/*    .zhangsq header a{
+        margin-right: 1.5rem;
+    }
+    .zhangsq header div i{
+        margin: 0 .3rem;
+    }*/
+}
+.zhangsq article{
+    overflow: hidden;
+}
+.zhangsq article ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: .1rem solid #EAEAEA;
+    overflow: hidden;
+    text-align: center;
+}
+.zhangsq article ul li{
+    width: 33.33333%;
+    flex-shrink:0;
+    flex-grow: 0;
+    margin: 1.0rem 0;
+    border-right: .1rem solid #F1F1F1;
+}
+.zhangsq  ul li>a{
+    display: block;
+}
+.zhangsq  ul li>a>.mxdp_tips{
+    border: .1rem solid #E1E1E1;
+    border-radius: 2.0rem;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    padding: .3rem .9rem .3rem .4rem;
+    vertical-align: middle;
+}
+.zhangsq  ul li>a>.mxdp_tips img{
+    width: 1.7rem;
+    height: 1.7rem;
+    float: left;
+}
+.zhangsq  ul li>a>.mxdp_tips s{
+    color: #222;
+    float: left;
+    font-size: 1.3rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    margin-left: .5rem;
+}
+.zhangsq  ul li>a>img{
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+}
+.zhangsq  ul li>a>p{
+    color: #555;
+    font-size: 1.3rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin: .7rem .8rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.zhangsq  ul li>a>div{
+    text-align: center;
+    margin: .5rem .8rem 0;
+}
+.zhangsq  ul li>a>div>i,.zhangsq  ul li>a>div>s,.zhangsq  ul li>a>div>em{
+    display: inline-block;
+    vertical-align: middle;
+}
+.zhangsq  ul li>a>div>i{
+    color: #F55;
+    font-size: 1.4rem;
+}
+.zhangsq  ul li>a>div b{
+    font-size: 1.1rem;
+}
+.zhangsq  ul li>a>div>s{
+    color: #AAA;
+    font-size: 1.0rem;
+    text-decoration: line-through;
+}
+.zhangsq  ul li>a>div>em{
+    background: #F66;
+    border-radius: .1rem;
+    color: #FFF;
+    font-size: 1.0rem;
+    margin-left: .5rem;
+    padding-top: .1rem;
+    padding-right: .2rem;
+    padding-left: .2rem;
+}
+.mxdanpin{
+    text-align: center;
+}
+.mxdanpin h2{
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 400;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.mxdanpin h2 span{
+    color: #ccc;
+}
+.mxdanpin ul{
+    background: #fff;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.mxdanpin ul li{
+    border-right: .1rem solid #F1F1F1;
+    border-bottom: .1rem solid #F1F1F1;
+    padding: 1.5rem 0 .7rem;
+    text-align: center;
+    width: 50%;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+.mxdanpin ul li:nth-child(2n){
+    border-right: 0;
+}
+
+
+.mxdanpin ul li>a{
+    display: block;
+}
+.mxdanpin ul li>a>.mxdp_tips{
+    border: .1rem solid #E1E1E1;
+    border-radius: 2.0rem;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    padding: .3rem .9rem .3rem .4rem;
+    vertical-align: middle;
+}
+.mxdanpin ul li>a>.mxdp_tips img{
+    width: 1.7rem;
+    height: 1.7rem;
+    float: left;
+}
+.mxdanpin ul li>a>.mxdp_tips s{
+    color: #222;
+    float: left;
+    font-size: 1.3rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    margin-left: .5rem;
+}
+.mxdanpin ul li>a>img{
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+}
+.mxdanpin ul li>a>p{
+    color: #555;
+    font-size: 1.3rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin: .7rem .8rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mxdanpin ul li>a>div{
+    text-align: center;
+    margin: .5rem .8rem 0;
+}
+.mxdanpin ul li>a>div>i,.mxdanpin ul li>a>div>s,.mxdanpin ul li>a>div>em{
+    display: inline-block;
+    vertical-align: middle;
+}
+.mxdanpin ul li>a>div>i{
+    color: #F55;
+    font-size: 1.4rem;
+}
+.mxdanpin ul li>a>div b{
+    font-size: 1.1rem;
+}
+.mxdanpin ul li>a>div>s{
+    color: #AAA;
+    font-size: 1.0rem;
+    text-decoration: line-through;
+}
+.mxdanpin ul li>a>div>em{
+    background: #F66;
+    border-radius: .1rem;
+    color: #FFF;
+    font-size: 1.0rem;
+    margin-left: .5rem;
+    padding-top: .1rem;
+    padding-right: .2rem;
+    padding-left: .2rem;
+}
+.jpss{
+
+}
+.jpss h2{
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 400;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+}
+.jpss h2 span{
+    color: #ccc;
+}
+.jpss ul li{
+    margin-bottom: 1rem;
+    background: #fff;
+}
+.jpss ul li a{
+    display: block;
+}
+.jpss ul li a div{
+    position: relative;
+}
+.jpss ul li a div img{
+    width: 100%;
+}
+.jpss ul li a div i{
+    background: rgba(0,0,0,0.4);
+    border-radius: 5.4rem 0 0 5.4rem;
+    bottom: 2.0rem;
+    color: #FFF;
+    display: block;
+    font-size: 1.4rem;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 5.4rem;
+}
+.jpss ul li a b{
+    color: #222;
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    padding: 0 1.5rem;
+}
+.jpss ul li a p{
+    color: #999;
+    font-size: 1.2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: .6rem;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    padding-bottom: 1.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.seemore h2{
+    background: #F4F4F4;
+    border-bottom: .1rem solid #CCC;
+    color: #666;
+    font-size: 1.2rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    text-align: center;
+    font-weight: normal;
+}
+.fuwu{
+    background: #fff;
+    border-bottom: .1rem solid #F1F1F1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1.3rem 0;
+}
+.fuwu>div{
+    flex-grow: 1;
+    border-right: .1rem solid #F1F1F1;
+}
+.fuwu>div:last-child{
+    border-right: 0;
+}
+.fuwu>div>span{
+    display: block;
+    margin: 0 auto;
+    border: .1rem solid #AAA;
+    border-radius: 5.0rem;
+    color: #666;
+    font-size: 1.2rem;
+    height: 3.1rem;
+    line-height: 3.1rem;
+    width: 3.1rem;
+    text-align: center;
+}
+.fuwu>div>p{
+    text-align: center;
+    margin-top: .7rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+footer{
+    background: #fff;
+    color: #999;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 5.3rem;
+}
+footer p:first-child{
+    line-height: 3.7rem;
+}
+footer a{
+    color: #999;
+}
+.footerNav{
+    height:5.3rem;
+    position: fixed;
+    background: #fff;
+    border-top: .1rem solid #d0d0d0;
+    border-bottom: .1rem solid #d0d0d0;
+    bottom: 0;
+    left: 0;
+    z-index: 111;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.footerNav>div{
+    flex-grow: 1;
+    color: #555;
+    font-size: 1.0rem;
+    text-align: center;
+}
+.footerNav>div a{
+    display: block;
+}
+.footerNav>div a em{
+    display: block;
+    height: 3.3rem;
+    margin: 0 auto;
+    width: 5.0rem;
+}
+.footerNav .active{
+    color: #19a243;
+}
